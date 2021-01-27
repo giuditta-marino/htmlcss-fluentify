@@ -16,12 +16,11 @@ body, html{
 /* HEADER */
 
 header{
-  height: 400px;
-  background-color: red;
+  /* height: 400px; */
+  /* background-color: red; */
 }
 
 nav{
-  height: 60px;
   background-color: #0c325a;
   padding: 10px 0;
 }
@@ -44,22 +43,26 @@ nav ul li a{
   padding: 0 5px;
 }
 
-
 .logo{
-  display: inline-block;
   vertical-align: middle;
+  float: left;
 }
 
 .logo img{
   height: 30px;
 }
 
-.ul-left{
-  margin-left: 35px;
+.ul-right{
+  text-align: right;
+  float: left;
+  vertical-align: middle;
+  padding-top: 5px;
 }
 
-.ul-right{
-  margin-left: 55px;
+.ul-left{
+  float: left;
+  vertical-align: middle;
+  padding-top: 5px;
 }
 
 .button{
@@ -76,9 +79,45 @@ nav ul li a{
   padding: 4px 5px;
 }
 
+#jumbo{
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.img-jumbo{
+  position: relative;
+  height: 300px;
+  background-color: #0c325a;
+}
+
+h1{
+  color: white;
+  font-size: 40px;
+}
+
 /* HEADER */
+
+/* UTILITY */
 
 .bg-green{
   background-color: #7cbb02;
   border: 2px solid #7cbb02;
+}
+
+.col-13{
+  width: 13%;
+
+}
+
+.col-40{
+  width: calc(87% / 2) ;
+}
+
+
+.row:after{
+  content: '';
+  display: table;
+  clear: both;
 }
