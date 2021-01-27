@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body, html{
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .container{
   width: 80%;
   margin: 0 auto;
@@ -19,10 +23,12 @@ header{
 nav{
   height: 60px;
   background-color: #0c325a;
+  padding: 10px 0;
 }
 
 nav ul{
   display: inline-block;
+  vertical-align: middle;
 }
 
 nav ul li {
@@ -33,16 +39,46 @@ nav ul li {
 nav ul li a{
   color: white;
   text-decoration: none;
-  font-size: 7px;
+  font-size: 8px;
   text-transform: uppercase;
+  padding: 0 5px;
 }
 
 
 .logo{
   display: inline-block;
+  vertical-align: middle;
 }
 
-.float-right{
-  float: right;
+.logo img{
+  height: 30px;
 }
+
+.ul-left{
+  margin-left: 35px;
+}
+
+.ul-right{
+  margin-left: 55px;
+}
+
+.button{
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#first-button{
+  padding: 4px 16px;
+  border: 2px solid white;
+}
+
+#second-button{
+  padding: 4px 5px;
+}
+
 /* HEADER */
+
+.bg-green{
+  background-color: #7cbb02;
+  border: 2px solid #7cbb02;
+}
