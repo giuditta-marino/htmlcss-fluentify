@@ -8,10 +8,6 @@
 body, html{
   font-family: 'Roboto', sans-serif;
 }
-
-.bg-grey{
-  background-color: #d3d3d3;
-}
 /* AZZERAMENTO E REGOLE GENERALI PAGINA */
 
 /* HEADER */
@@ -19,6 +15,7 @@ header{
     background-color: #0c325a;
 }
 
+/* NAV */
 nav{
   padding: 10px 0;
 }
@@ -61,12 +58,10 @@ nav ul li a{
   padding-top: 5px;
   padding-left: 20px;
 }
+/* NAV */
 
 .bg-jumbo{
-  background-image: url("../img/background-header.png");
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: 116% 100%;
+  background: url("../img/background-header.png") 116% 100%/70% no-repeat;
 }
 
 header h1{
@@ -79,63 +74,6 @@ header h1{
   padding: 150px 0;
 }
 /* HEADER */
-
-/* CLASSI UTILITY PER LAYOUT */
-.container{
-  width: 80%;
-  margin: 0 auto;
-}
-
-.col-13{
-  width: 13%;
-}
-
-.col-40{
-  width: calc(87% / 2) ;
-}
-
-.col-50{
-  width: 50%;
-}
-.col-100{
-  width: 100%;
-  text-align: center;
-}
-
-.col-33{
-  width: calc(100% / 3);
-}
-/* CLASSI UTILITY PER LAYOUT */
-
-/* CLASSI E ID PER BUTTON E BACKGROUND*/
-.button{
-  border-radius: 5px;
-  margin-right: 10px;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#first-button{
-  padding: 4px 16px;
-  border: 2px solid white;
-}
-
-#second-button{
-  padding: 4px 5px;
-}
-
-.btn-big{
-  padding: 17px 17px;
-  font-size: 14px;
-}
-
-.bg-green{
-  background-color: #7cbb02;
-  border: 2px solid #7cbb02;
-}
-/* UTILITY PER  BUTTON E BACKGROUND*/
 
 /* CLEARFIX  E FLOAT LEFT COLONNE*/
 .row:after{
@@ -193,20 +131,6 @@ header h1{
   font-size: 15px;
   color: #808080;
 }
-
-.p-10{
-  padding: 10px 0;
-}
-
-.pt-40{
-  padding-top: 40px;
-}
-
-.pb-40{
-  padding-bottom: 40px;
-}
-
-
 /*SECONDA SEZIONE*/
 
 /* TERZA SEZIONE */
@@ -243,9 +167,8 @@ header h1{
 /* TERZA SEZIONE */
 
 /* FOOTER */
-
 footer{
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
 footer h2{
@@ -255,7 +178,7 @@ footer h2{
 footer p{
   display: inline-block;
   color: #808080;
-
+  font-size: 16px;
 }
 
 #sono{
@@ -264,21 +187,107 @@ footer p{
 
 #seleziona{
   border-bottom: 1px solid #808080;
-  padding-right: 50px;
-}
-
-#seleziona:after{
-  content: '\25be';
+  padding-right: 70px;
+  margin-right: 10px;
+  position: relative;
 }
 
 .button-footer{
   padding-left: 30px;
 }
-/* FOOTER */
 
+footer select{
+  border:none;
+  border-bottom: 1px solid #808080;
+  color: #808080;
+  background-color: #d3d3d3;
+  padding-right: 30px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* TASTO HELP*/
 #help-button{
   position: fixed;
   bottom: 0;
   right: 252px;
   z-index: 1;
 }
+/* TASTO HELP*/
+
+/* FOOTER */
+
+/* CLASSI E ID PER BUTTON E BACKGROUND*/
+.button{
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#first-button{
+  padding: 4px 16px;
+  border: 2px solid white;
+}
+
+#second-button{
+  padding: 4px 5px;
+}
+
+.btn-big{
+  padding: 17px 17px;
+  font-size: 14px;
+}
+
+.bg-green{
+  background-color: #7cbb02;
+  border: 2px solid #7cbb02;
+}
+
+.bg-grey{
+  background-color: #d3d3d3;
+}
+/* UTILITY PER  BUTTON E BACKGROUND*/
+
+/* UTILITY PER PADDING*/
+.p-10{
+  padding: 10px 0;
+}
+
+.pt-40{
+  padding-top: 40px;
+}
+
+.pb-40{
+  padding-bottom: 40px;
+}
+/* UTILITY PER PADDING*/
+
+/* CLASSI UTILITY PER LAYOUT */
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.col-13{
+  width: 13%;
+}
+
+.col-40{
+  width: calc(87% / 2) ;
+}
+
+.col-50{
+  width: 50%;
+}
+.col-100{
+  width: 100%;
+  text-align: center;
+}
+
+.col-33{
+  width: calc(100% / 3);
+}
+/* CLASSI UTILITY PER LAYOUT */
