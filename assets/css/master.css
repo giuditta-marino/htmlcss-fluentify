@@ -206,9 +206,7 @@ header h1{
   padding-bottom: 40px;
 }
 
-/* .plr-20{
-  padding: 0 60px;
-} */
+
 /*SECONDA SEZIONE*/
 
 /* TERZA SEZIONE */
@@ -245,6 +243,11 @@ header h1{
 /* TERZA SEZIONE */
 
 /* FOOTER */
+
+footer{
+  padding: 60px 0;
+}
+
 footer h2{
   font-size: 27px;
 }
@@ -261,10 +264,21 @@ footer p{
 
 #seleziona{
   border-bottom: 1px solid #808080;
-  /* padding-right: 50px; */
+  padding-right: 50px;
 }
 
-#seleziona span:after{
+#seleziona:after{
   content: '\25be';
 }
+
+.button-footer{
+  padding-left: 30px;
+}
 /* FOOTER */
+
+#help-button{
+  position: fixed;
+  bottom: 0;
+  right: 252px;
+  z-index: 1;
+}
