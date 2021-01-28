@@ -1,3 +1,4 @@
+/* AZZERAMENTO E REGOLE GENERALI PAGINA */
 *{
   margin: 0;
   padding: 0;
@@ -5,23 +6,16 @@
 }
 
 body, html{
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-
-.container{
-  width: 80%;
-  margin: 0 auto;
-}
+/* AZZERAMENTO E REGOLE GENERALI PAGINA */
 
 /* HEADER */
-
 header{
-  /* height: 400px; */
-  /* background-color: red; */
+    background-color: #0c325a;
 }
 
 nav{
-  background-color: #0c325a;
   padding: 10px 0;
 }
 
@@ -36,16 +30,16 @@ nav ul li {
 }
 
 nav ul li a{
+  font-size: 11px;
+  padding: 0 5px;
   color: white;
   text-decoration: none;
-  font-size: 8px;
   text-transform: uppercase;
-  padding: 0 5px;
+  font-weight: bold;
 }
 
 .logo{
   vertical-align: middle;
-  float: left;
 }
 
 .logo img{
@@ -54,20 +48,61 @@ nav ul li a{
 
 .ul-right{
   text-align: right;
-  float: left;
   vertical-align: middle;
   padding-top: 5px;
 }
 
 .ul-left{
-  float: left;
   vertical-align: middle;
   padding-top: 5px;
+  padding-left: 20px;
 }
 
+.bg-jumbo{
+  background-image: url("../img/background-header.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 116% 100%;
+}
+
+h1{
+  color: white;
+  font-size: 47px;
+  margin-bottom: 30px;
+  }
+
+.header-text{
+  padding: 150px 0;
+}
+/* HEADER */
+
+/* CLASSI UTILITY PER LAYOUT */
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.col-13{
+  width: 13%;
+}
+
+.col-40{
+  width: calc(87% / 2) ;
+}
+
+.col-50{
+  width: 50%;
+}
+/* CLASSI UTILITY PER LAYOUT */
+
+/* CLASSI E ID PER BUTTON*/
 .button{
   border-radius: 5px;
   margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #first-button{
@@ -79,45 +114,25 @@ nav ul li a{
   padding: 4px 5px;
 }
 
-#jumbo{
-  height: 250px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.btn-big{
+  padding: 17px 17px;
+  font-size: 14px;
 }
-
-.img-jumbo{
-  position: relative;
-  height: 300px;
-  background-color: #0c325a;
-}
-
-h1{
-  color: white;
-  font-size: 40px;
-}
-
-/* HEADER */
-
-/* UTILITY */
 
 .bg-green{
   background-color: #7cbb02;
   border: 2px solid #7cbb02;
 }
+/* UTILITY PER  BUTTON*/
 
-.col-13{
-  width: 13%;
-
-}
-
-.col-40{
-  width: calc(87% / 2) ;
-}
-
-
+/* CLEARFIX  E FLOAT LEFT COLONNE*/
 .row:after{
   content: '';
   display: table;
   clear: both;
 }
+
+[class*="col-"]{
+  float: left;
+}
+/* CLEARFIX  E FLOAT LEFT COLONNE*/
