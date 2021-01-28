@@ -8,6 +8,10 @@
 body, html{
   font-family: 'Roboto', sans-serif;
 }
+
+main{
+  background-color: #d3d3d3;
+}
 /* AZZERAMENTO E REGOLE GENERALI PAGINA */
 
 /* HEADER */
@@ -32,7 +36,7 @@ nav ul li {
 nav ul li a{
   font-size: 11px;
   padding: 0 5px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -93,13 +97,17 @@ h1{
 .col-50{
   width: 50%;
 }
+.col-100{
+  width: 100%;
+  text-align: center;
+}
 /* CLASSI UTILITY PER LAYOUT */
 
-/* CLASSI E ID PER BUTTON*/
+/* CLASSI E ID PER BUTTON E BACKGROUND*/
 .button{
   border-radius: 5px;
   margin-right: 10px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -123,7 +131,7 @@ h1{
   background-color: #7cbb02;
   border: 2px solid #7cbb02;
 }
-/* UTILITY PER  BUTTON*/
+/* UTILITY PER  BUTTON E BACKGROUND*/
 
 /* CLEARFIX  E FLOAT LEFT COLONNE*/
 .row:after{
@@ -136,3 +144,19 @@ h1{
   float: left;
 }
 /* CLEARFIX  E FLOAT LEFT COLONNE*/
+
+/*PRIMA SEZIONE*/
+.first-section-text{
+  padding: 30px 0;
+  line-height: 27px;
+}
+
+.first-section-text h2{
+  font-size: 18px;
+}
+
+.first-section-text p{
+  color: #808080;
+  font-size: 13px;
+}
+/*PRIMA SEZIONE*/
