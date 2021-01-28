@@ -9,7 +9,7 @@ body, html{
   font-family: 'Roboto', sans-serif;
 }
 
-main{
+.bg-grey{
   background-color: #d3d3d3;
 }
 /* AZZERAMENTO E REGOLE GENERALI PAGINA */
@@ -69,7 +69,7 @@ nav ul li a{
   background-position: 116% 100%;
 }
 
-h1{
+header h1{
   color: white;
   font-size: 47px;
   margin-bottom: 30px;
@@ -100,6 +100,10 @@ h1{
 .col-100{
   width: 100%;
   text-align: center;
+}
+
+.col-33{
+  width: calc(100% / 3);
 }
 /* CLASSI UTILITY PER LAYOUT */
 
@@ -151,7 +155,7 @@ h1{
   line-height: 27px;
 }
 
-.first-section-text h2{
+.first-section-text h3{
   font-size: 18px;
 }
 
@@ -160,3 +164,107 @@ h1{
   font-size: 13px;
 }
 /*PRIMA SEZIONE*/
+
+/*SECONDA SEZIONE*/
+.second-section{
+  background-color: #ffffff;
+}
+
+.second-section .col-33{
+  text-align: center;
+  padding: 22px;
+}
+
+.second-section img{
+  height: 104px;
+}
+
+.second-section h3{
+  color: #7cbb02;
+  font-size: 23px;
+}
+
+.second-section hr{
+  width: 20%;
+  margin: 10px auto;
+}
+
+.second-section p{
+  font-size: 15px;
+  color: #808080;
+}
+
+.p-10{
+  padding: 10px 0;
+}
+
+.pt-40{
+  padding-top: 40px;
+}
+
+.pb-40{
+  padding-bottom: 40px;
+}
+
+/* .plr-20{
+  padding: 0 60px;
+} */
+/*SECONDA SEZIONE*/
+
+/* TERZA SEZIONE */
+.third-section{
+  background-color: #ffffff;
+}
+
+.third-section img{
+  height: 380px;
+}
+
+.third-section [class*="col-"]{
+  padding-left: 55px;
+}
+
+.text-third-section{
+  padding-left: 18px;
+}
+
+.third-section h2{
+  font-size: 27px;
+  line-height: 34px;
+}
+
+.third-section p{
+  font-size: 15px;
+  color: #808080;
+}
+
+.third-section p a{
+  font-size: 13px;
+  color: #5586bc;
+}
+/* TERZA SEZIONE */
+
+/* FOOTER */
+footer h2{
+  font-size: 27px;
+}
+
+footer p{
+  display: inline-block;
+  color: #808080;
+
+}
+
+#sono{
+  padding-right: 28px;
+}
+
+#seleziona{
+  border-bottom: 1px solid #808080;
+  /* padding-right: 50px; */
+}
+
+#seleziona span:after{
+  content: '\25be';
+}
+/* FOOTER */
